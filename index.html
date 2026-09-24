@@ -1,34 +1,45 @@
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+```html
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
 
-  <!-- SEO 標籤 -->
-  <title>逐光景觀餐廳 | 彰化花壇約會首選 180度夜景與水母主題包廂</title>
-  <meta name="description" content="彰化花壇夜景約會首選「逐光景觀餐廳」！擁有180度無死角百萬夜景，提供水母主題包廂、活動包場聚會、質感餐酒調酒與寵物友善空間。1F戶外花園露天觀景台與2F奢華酒吧，感受璀璨夜色與極致微醺。">
-  <meta name="keywords" content="逐光景觀餐廳, 彰化景觀餐廳, 彰化夜景餐廳, 花壇景觀餐廳, 彰化約會餐廳, 彰化餐酒館, 水母包廂, 活動包場, 寵物友善餐廳, 180度夜景, 百萬夜景, 露天觀景台">
+<head>
+
+  <!-- SEO 搜尋引擎優化 -->
+  <title>逐光景觀餐廳 CHASING LIGHT｜彰化花壇夜景．高空餐酒館．寵物友善</title>
+
+  <meta name="description" content="位於彰化花壇 139 縣道旁，擁有 180 度高空日落夜景、1F 峇里島渡假風草皮與 2F 摩登餐酒館。提供咖啡甜點、深夜餐點、調酒與水煙，不定期歌手駐唱與手作活動，寵物友善。">
+
+  <meta name="keywords" content="逐光景觀餐廳,彰化景觀餐廳,彰化夜景餐廳,花壇景觀餐廳,139縣道餐廳,彰化餐酒館,彰化約會餐廳,彰化寵物友善餐廳,彰化水煙">
+
   <meta name="author" content="逐光景觀餐廳">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#060709">
 
-  <!-- 社群分享預覽 (Open Graph) -->
-  <meta property="og:title" content="逐光景觀餐廳 | 彰化花壇約會首選 180度夜景與主題包廂">
-  <meta property="og:description" content="180度無死角百萬夜景、水母主題包廂與寵物友善空間！適合約會聚會與活動包場，感受璀璨夜色與極致微醺。">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="逐光景觀餐廳 CHASING LIGHT｜彰化花壇 180 度高空夜景餐酒館">
+  <meta property="og:description" content="139 縣道絕美私房景點！渡假風雙重氛圍、水母造景包廂、深夜餐點、精緻調酒與水煙。寵物友善，歡迎預約。">
   <meta property="og:image" content="https://linpg.github.io/Chasing-the-light/out-2.jpg">
-  <meta property="og:url" content="https://linpg.github.io/Chasing-the-light/">
-  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://linpg.github.io/zhuguang/">
+  <meta property="og:type" content="restaurant">
   <meta property="og:locale" content="zh_TW">
 
-  <link rel="canonical" href="https://linpg.github.io/Chasing-the-light/">
+  <link rel="canonical" href="https://linpg.github.io/zhuguang/">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
 
+
   <style>
+
     /* =========================
        Luxury Dark Minimal Theme
     ========================= */
+
     :root {
       --bg: #060709;
       --card-bg: rgba(255, 255, 255, 0.03);
@@ -43,27 +54,116 @@
       --font-zh: 'Noto Sans TC', sans-serif;
     }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body { font-family: var(--font-zh); background-color: var(--bg); color: var(--text); line-height: 1.7; -webkit-font-smoothing: antialiased; }
-    a { color: inherit; text-decoration: none; }
-    img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-    .container { width: min(1120px, 88%); margin: 0 auto; }
-    .section { padding: 100px 0; }
+    html {
+      scroll-behavior: smooth;
+    }
 
-    /* Header Navigation */
-    header { position: fixed; top: 0; left: 0; width: 100%; z-index: 100; transition: all 0.4s ease; }
-    header.scrolled { background: rgba(6, 7, 9, 0.88); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); }
-    .nav { height: 80px; display: flex; align-items: center; justify-content: space-between; }
-    .brand { font-family: var(--font-en); font-size: 21px; letter-spacing: 3px; font-weight: 700; color: #fff; }
-    .brand span { color: var(--gold); }
-    .nav-links { display: flex; gap: 32px; list-style: none; font-size: 13px; letter-spacing: 1px; color: var(--muted); }
-    .nav-links a:hover { color: #fff; }
-    .btn-nav { padding: 8px 20px; border: 1px solid var(--gold); border-radius: 40px; color: var(--gold) !important; background: rgba(212, 175, 55, 0.05); transition: 0.3s; }
-    .btn-nav:hover { background: var(--gold); color: #000 !important; }
+    body {
+      font-family: var(--font-zh);
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
 
-    /* Hero Section */
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .container {
+      width: min(1120px, 88%);
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 100px 0;
+    }
+
+
+    /* =========================
+       Header Navigation
+    ========================= */
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+      transition: all 0.4s ease;
+    }
+
+    header.scrolled {
+      background: rgba(6, 7, 9, 0.88);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav {
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      font-family: var(--font-en);
+      font-size: 21px;
+      letter-spacing: 3px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .brand span {
+      color: var(--gold);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+      font-size: 13px;
+      letter-spacing: 1px;
+      color: var(--muted);
+    }
+
+    .nav-links a:hover {
+      color: #fff;
+    }
+
+    .btn-nav {
+      padding: 8px 20px;
+      border: 1px solid var(--gold);
+      border-radius: 40px;
+      color: var(--gold) !important;
+      background: rgba(212, 175, 55, 0.05);
+      transition: 0.3s;
+    }
+
+    .btn-nav:hover {
+      background: var(--gold);
+      color: #000 !important;
+    }
+
+
+    /* =========================
+       Hero Section
+    ========================= */
+
     .hero {
       min-height: 100vh;
       display: flex;
@@ -72,48 +172,242 @@
       text-align: center;
       position: relative;
       padding: 120px 0 80px;
-      background: linear-gradient(180deg, rgba(6,7,9,0.3) 0%, rgba(6,7,9,0.96) 100%),
-                  url("https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=2000&q=85") center/cover no-repeat;
+
+      background:
+        linear-gradient(
+          180deg,
+          rgba(6,7,9,0.3) 0%,
+          rgba(6,7,9,0.96) 100%
+        ),
+        url("https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=2000&q=85")
+        center/cover no-repeat;
     }
-    .hero-title { font-family: var(--font-en); font-size: clamp(52px, 9vw, 96px); letter-spacing: 12px; font-weight: 800; line-height: 1.1; margin-bottom: 8px; color: #fff; }
-    .hero-sub { font-size: clamp(18px, 3.5vw, 26px); letter-spacing: 6px; color: var(--gold); font-weight: 300; margin-bottom: 24px; }
-    .hero-desc { max-width: 620px; margin: 0 auto 32px; color: var(--muted); font-size: 15px; font-weight: 300; }
 
-    /* Buttons */
-    .cta-group { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; margin-bottom: 40px; }
-    .btn { display: inline-flex; align-items: center; justify-content: center; height: 52px; padding: 0 30px; border-radius: 40px; font-size: 14px; font-weight: 500; transition: 0.3s; cursor: pointer; border: 1px solid transparent; }
-    .btn-gold { background: var(--gold); color: #000; font-weight: 700; box-shadow: 0 4px 20px rgba(212, 175, 55, 0.25); }
-    .btn-gold:hover { background: var(--gold-light); transform: translateY(-2px); }
-    .btn-glass { background: var(--card-bg); border-color: var(--border); color: var(--text); backdrop-filter: blur(10px); }
-    .btn-glass:hover { background: var(--card-hover); border-color: rgba(255,255,255,0.2); transform: translateY(-2px); }
+    .hero-title {
+      font-family: var(--font-en);
+      font-size: clamp(52px, 9vw, 96px);
+      letter-spacing: 12px;
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 8px;
+      color: #fff;
+    }
 
-    /* Highlights Tag Grid */
-    .hero-tags { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
-    .tag-badge { font-size: 12px; color: var(--gold-light); background: rgba(212, 175, 55, 0.08); border: 1px solid var(--border-gold); padding: 6px 16px; border-radius: 30px; }
+    .hero-sub {
+      font-size: clamp(18px, 3.5vw, 26px);
+      letter-spacing: 6px;
+      color: var(--gold);
+      font-weight: 300;
+      margin-bottom: 24px;
+    }
 
-    /* Section Header */
-    .section-head { text-align: center; margin-bottom: 50px; }
-    .section-head .sub-title { font-family: var(--font-en); font-size: 12px; color: var(--gold); letter-spacing: 4px; text-transform: uppercase; margin-bottom: 8px; display: block; }
-    .section-head h2 { font-size: clamp(28px, 4vw, 38px); font-weight: 700; color: #fff; }
-    .section-head p { color: var(--muted); font-size: 14px; margin-top: 10px; font-weight: 300; }
+    .hero-text {
+      max-width: 620px;
+      margin: 0 auto 32px;
+      color: var(--muted);
+      font-size: 15px;
+      font-weight: 300;
+    }
 
-    /* Feature Grid */
-    .feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 60px; }
-    .feature-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 20px; padding: 36px 28px; transition: 0.4s; }
-    .feature-card:hover { border-color: var(--border-gold); background: var(--card-hover); transform: translateY(-4px); }
-    .feature-icon { font-size: 32px; margin-bottom: 20px; display: inline-block; }
-    .feature-card h3 { font-size: 20px; color: #fff; margin-bottom: 12px; font-weight: 700; }
-    .feature-card p { color: var(--muted); font-size: 14px; font-weight: 300; line-height: 1.6; }
 
-    /* About Grid */
-    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
-    .about-img { height: 480px; border-radius: 20px; overflow: hidden; border: 1px solid var(--border); }
-    .about-text h2 { font-size: 34px; font-weight: 700; margin-bottom: 20px; line-height: 1.3; color: #fff; }
-    .about-text p { color: var(--muted); font-size: 15px; margin-bottom: 20px; font-weight: 300; }
+    /* =========================
+       Buttons
+    ========================= */
 
-    /* Event Banner */
+    .cta-group {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 52px;
+      padding: 0 30px;
+      border-radius: 40px;
+      font-size: 14px;
+      font-weight: 500;
+      transition: 0.3s;
+      cursor: pointer;
+      border: 1px solid transparent;
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: #000;
+      font-weight: 700;
+      box-shadow: 0 4px 20px rgba(212, 175, 55, 0.25);
+    }
+
+    .btn-gold:hover {
+      background: var(--gold-light);
+      transform: translateY(-2px);
+    }
+
+    .btn-glass {
+      background: var(--card-bg);
+      border-color: var(--border);
+      color: var(--text);
+      backdrop-filter: blur(10px);
+    }
+
+    .btn-glass:hover {
+      background: var(--card-hover);
+      border-color: rgba(255,255,255,0.2);
+      transform: translateY(-2px);
+    }
+
+
+    /* =========================
+       Highlights Tag Grid
+    ========================= */
+
+    .hero-tags {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .tag-badge {
+      font-size: 12px;
+      color: var(--gold-light);
+      background: rgba(212, 175, 55, 0.08);
+      border: 1px solid var(--border-gold);
+      padding: 6px 16px;
+      border-radius: 30px;
+    }
+
+
+    /* =========================
+       Section Header
+    ========================= */
+
+    .section-head {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-head .sub-title {
+      font-family: var(--font-en);
+      font-size: 12px;
+      color: var(--gold);
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .section-head h2 {
+      font-size: clamp(28px, 4vw, 38px);
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .section-head p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 10px;
+      font-weight: 300;
+    }
+
+
+    /* =========================
+       Feature Grid
+    ========================= */
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-bottom: 60px;
+    }
+
+    .feature-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 36px 28px;
+      transition: 0.4s;
+    }
+
+    .feature-card:hover {
+      border-color: var(--border-gold);
+      background: var(--card-hover);
+      transform: translateY(-4px);
+    }
+
+    .feature-icon {
+      font-size: 32px;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+
+    .feature-card h3 {
+      font-size: 20px;
+      color: #fff;
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+
+    .feature-card p {
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.6;
+    }
+
+
+    /* =========================
+       About Grid
+    ========================= */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .about-img {
+      height: 480px;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+
+    .about-text h2 {
+      font-size: 34px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      line-height: 1.3;
+      color: #fff;
+    }
+
+    .about-text p {
+      color: var(--muted);
+      font-size: 15px;
+      margin-bottom: 20px;
+      font-weight: 300;
+    }
+
+
+    /* =========================
+       Event & Entertainment Banner
+    ========================= */
+
     .event-card {
-      background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(255, 255, 255, 0.02) 100%);
+      background:
+        linear-gradient(
+          135deg,
+          rgba(212, 175, 55, 0.1) 0%,
+          rgba(255, 255, 255, 0.02) 100%
+        );
+
       border: 1px solid var(--border-gold);
       border-radius: 20px;
       padding: 40px;
@@ -123,38 +417,186 @@
       gap: 30px;
       margin-top: 50px;
     }
-    .event-card h3 { font-size: 22px; margin-bottom: 8px; color: var(--gold-light); }
-    .event-card p { color: var(--muted); font-size: 14px; font-weight: 300; }
 
-    /* Gallery Grid */
-    .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-    .gallery-item { height: 300px; border-radius: 14px; overflow: hidden; border: 1px solid var(--border); transition: 0.4s; }
-    .gallery-item:hover { transform: translateY(-4px); border-color: var(--border-gold); }
+    .event-card h3 {
+      font-size: 22px;
+      margin-bottom: 8px;
+      color: var(--gold-light);
+    }
 
-    /* Info Grid */
-    .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
-    .info-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 20px; padding: 40px; display: flex; flex-direction: column; justify-content: space-between; }
-    .info-card h3 { font-size: 20px; margin-bottom: 16px; color: var(--gold); font-weight: 700; }
-    .info-card p { color: var(--muted); font-size: 14px; margin-bottom: 10px; font-weight: 300; }
-    .price-box { background: rgba(212, 175, 55, 0.06); border: 1px solid var(--border-gold); padding: 16px; border-radius: 12px; margin: 16px 0; }
-    .price-box p { color: var(--gold-light); font-weight: 500; margin-bottom: 0; font-size: 14px; }
-    .hours-list { list-style: none; color: var(--muted); font-size: 14px; margin-top: 10px; }
-    .hours-list li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--border); }
+    .event-card p {
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 300;
+    }
 
-    /* FAQ */
-    .faq-list { max-width: 820px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px; }
-    details { padding: 20px 28px; border-radius: 14px; background: var(--card-bg); border: 1px solid var(--border); }
-    details[open] { border-color: var(--border-gold); }
-    summary { cursor: pointer; font-size: 16px; font-weight: 700; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #fff; }
-    summary::after { content: "+"; color: var(--gold); font-size: 22px; }
-    details[open] summary::after { content: "−"; }
-    details p { color: var(--muted); padding-top: 12px; font-size: 14px; font-weight: 300; line-height: 1.6; }
 
-    /* Footer */
-    footer { border-top: 1px solid var(--border); padding: 60px 0 110px; text-align: center; color: var(--muted); font-size: 13px; }
-    .footer-brand { font-family: var(--font-en); font-size: 22px; color: #fff; margin-bottom: 12px; letter-spacing: 3px; }
+    /* =========================
+       Gallery Grid
+    ========================= */
 
-    /* Mobile Floating Bar */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .gallery-item {
+      height: 300px;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      transition: 0.4s;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-4px);
+      border-color: var(--border-gold);
+    }
+
+
+    /* =========================
+       Info & Pricing Grid
+    ========================= */
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .info-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .info-card h3 {
+      font-size: 20px;
+      margin-bottom: 16px;
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    .info-card p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 10px;
+      font-weight: 300;
+    }
+
+    .price-box {
+      background: rgba(212, 175, 55, 0.06);
+      border: 1px solid var(--border-gold);
+      padding: 16px;
+      border-radius: 12px;
+      margin: 16px 0;
+    }
+
+    .price-box p {
+      color: var(--gold-light);
+      font-weight: 500;
+      margin-bottom: 0;
+      font-size: 14px;
+    }
+
+    .hours-list {
+      list-style: none;
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    .hours-list li {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+
+    /* =========================
+       FAQ
+    ========================= */
+
+    .faq-list {
+      max-width: 820px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    details {
+      padding: 20px 28px;
+      border-radius: 14px;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+    }
+
+    details[open] {
+      border-color: var(--border-gold);
+    }
+
+    summary {
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 700;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+    }
+
+    summary::after {
+      content: "+";
+      color: var(--gold);
+      font-size: 22px;
+    }
+
+    details[open] summary::after {
+      content: "−";
+    }
+
+    details p {
+      color: var(--muted);
+      padding-top: 12px;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.6;
+    }
+
+
+    /* =========================
+       Footer
+    ========================= */
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 60px 0 110px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .footer-brand {
+      font-family: var(--font-en);
+      font-size: 22px;
+      color: #fff;
+      margin-bottom: 12px;
+      letter-spacing: 3px;
+    }
+
+
+    /* =========================
+       Mobile Bottom Floating Bar
+    ========================= */
+
     .mobile-bar {
       display: none;
       position: fixed;
@@ -170,36 +612,100 @@
       grid-template-columns: repeat(3, 1fr);
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
     }
-    .mobile-bar a { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 8px 0; font-size: 12px; color: var(--muted); font-weight: 500; }
-    .mobile-bar a.main-btn { background: var(--gold); color: #000; border-radius: 30px; font-weight: 700; }
 
-    /* 📱 手機介面自適應 */
-    @media (max-width: 768px) {
-      .nav-links { display: none; }
-      .mobile-bar { display: grid; }
-      body { padding-bottom: 80px; }
-
-      .hero { min-height: 85vh; padding: 100px 0 60px; }
-      .hero-title { font-size: 42px; letter-spacing: 6px; }
-      .hero-sub { font-size: 18px; letter-spacing: 3px; }
-
-      .feature-grid, .about-grid, .info-grid { grid-template-columns: 1fr; gap: 24px; }
-      .about-img { height: 300px; }
-      .event-card { flex-direction: column; text-align: center; }
-
-      .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-      .gallery-item { height: 200px; }
-      .section { padding: 60px 0; }
+    .mobile-bar a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 0;
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 500;
     }
+
+    .mobile-bar a.main-btn {
+      background: var(--gold);
+      color: #000;
+      border-radius: 30px;
+      font-weight: 700;
+    }
+
+
+    /* =========================
+       Responsive
+    ========================= */
+
+    @media (max-width: 768px) {
+
+      .nav-links {
+        display: none;
+      }
+
+      .mobile-bar {
+        display: grid;
+      }
+
+      body {
+        padding-bottom: 80px;
+      }
+
+      .hero {
+        min-height: 85vh;
+        padding: 100px 0 60px;
+      }
+
+      .hero-title {
+        font-size: 42px;
+        letter-spacing: 6px;
+      }
+
+      .hero-sub {
+        font-size: 18px;
+        letter-spacing: 3px;
+      }
+
+      .feature-grid,
+      .about-grid,
+      .info-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .about-img {
+        height: 300px;
+      }
+
+      .event-card {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+
+      .gallery-item {
+        height: 200px;
+      }
+
+      .section {
+        padding: 60px 0;
+      }
+
+    }
+
   </style>
 
-  <!-- Schema.org 結構化資料 -->
+
+  <!-- Schema.org Restaurant Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Restaurant",
     "name": "逐光景觀餐廳",
-    "description": "位於彰化花壇 139 縣道旁的高空夜景餐酒館，具備 1F 戶外大草皮與 2F 摩登酒吧。寵物友善，提供深夜餐點、調酒與水煙。",
+    "description": "位於彰化花壇 139 縣道旁的高空夜景餐酒館，具備 1F 峇里島渡假風草皮與 2F 摩登酒吧。寵物友善，提供深夜餐點、調酒與水煙。",
     "telephone": "+886-4-786-0776",
     "priceRange": "$350-$450",
     "address": {
@@ -214,4 +720,660 @@
     "menu": "https://online.fliphtml5.com/bbpeq/sdjr/#p=4"
   }
   </script>
+
 </head>
+
+
+<body>
+
+  <!-- Header -->
+  <header id="header">
+
+    <div class="container nav">
+
+      <a href="#top" class="brand">
+        CHASING LIGHT <span>逐光</span>
+      </a>
+
+      <ul class="nav-links">
+
+        <li><a href="#features">特色</a></li>
+        <li><a href="#about">關於</a></li>
+        <li><a href="#events">活動</a></li>
+        <li><a href="#gallery">環境</a></li>
+        <li><a href="#info">消費與資訊</a></li>
+
+        <li>
+          <a
+            class="btn-nav"
+            href="https://www.instagram.com/chasinglight_2025/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            IG 私訊預約
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </header>
+
+
+  <!-- Hero Section -->
+  <main id="top">
+
+    <section class="hero">
+
+      <div class="container">
+
+        <h1 class="hero-title">逐光</h1>
+
+        <div class="hero-sub">
+          CHASING LIGHT
+        </div>
+
+        <p class="hero-text">
+          彰化八卦山 139 縣道高空私房景點。<br>
+          180 度無遮蔽璀璨夜景、渡假風草皮與摩登酒吧，伴您至深夜凌晨兩點。
+        </p>
+
+
+        <div class="cta-group">
+
+          <a
+            class="btn btn-gold"
+            href="https://www.instagram.com/chasinglight_2025/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            💬 IG 私訊預約
+          </a>
+
+          <a
+            class="btn btn-glass"
+            href="tel:047860776"
+          >
+            ☎️ 營業時段直撥 (04-786-0776)
+          </a>
+
+          <a
+            class="btn btn-glass"
+            href="https://online.fliphtml5.com/bbpeq/sdjr/#p=4"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            🍽️ 電子菜單
+          </a>
+
+        </div>
+
+
+        <div class="hero-tags">
+
+          <span class="tag-badge">
+            🐾 寵物友善大草皮
+          </span>
+
+          <span class="tag-badge">
+            🌇 180° 高空夕陽夜景
+          </span>
+
+          <span class="tag-badge">
+            🍹 深夜餐點 / 調酒 / 水煙
+          </span>
+
+          <span class="tag-badge">
+            水母造景 15人包廂
+          </span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Core Features Grid -->
+    <section id="features" class="section">
+
+      <div class="container">
+
+        <div class="section-head">
+
+          <span class="sub-title">
+            EXCLUSIVITY
+          </span>
+
+          <h2>
+            核心亮點與雙重氛圍
+          </h2>
+
+          <p>
+            兼具渡假放鬆與現代摩登，滿足每一種深夜聚會想像
+          </p>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+
+          <div class="feature-card">
+
+            <div class="feature-icon">
+              🌴
+            </div>
+
+            <h3>
+              1F 渡假風戶外草皮
+            </h3>
+
+            <p>
+              採用放鬆的峇里島渡假風沙發區與大片綠地，適合看夕陽、家庭聚會，更是寵物放風奔跑的友善天地。
+            </p>
+
+          </div>
+
+
+          <div class="feature-card">
+
+            <div class="feature-icon">
+              🍸
+            </div>
+
+            <h3>
+              2F 摩登高空餐酒館
+            </h3>
+
+            <p>
+              現代感酒吧氛圍，俯瞰彰化市區百萬級燈火。提供精品咖啡、甜點、深夜熱食餐點、質感特調與水煙。
+            </p>
+
+          </div>
+
+
+          <div class="feature-card">
+
+            <div class="feature-icon">
+              💎
+            </div>
+
+            <h3>
+              夢幻水母私人包廂
+            </h3>
+
+            <p>
+              設有獨立包廂（可容納約 15 人），內部融入夢幻水母水族造景，隱私性極高，是歡聚派對的最佳選擇。
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- About Grid -->
+        <div id="about" class="about-grid">
+
+          <div class="about-img">
+
+            <img
+              src="out1-2.png"
+              alt="逐光景觀餐廳高空夜景"
+            >
+
+          </div>
+
+
+          <div class="about-text">
+
+            <h2>
+              彰化深夜限定，浪漫微醺去處
+            </h2>
+
+            <p>
+              位於八卦山 139 縣道旁高處，逐光憑藉無遮蔽的地理優勢，成為觀賞金黃夕陽落日與璀璨夜景的私人秘境。
+            </p>
+
+            <p>
+              營業至半夜兩點，燈光美、氣氛佳，是夜貓子吃宵夜、情侶約會與朋友聚會的熱門打卡首選。
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- Event & Entertainment Banner -->
+        <div id="events" class="event-card">
+
+          <div>
+
+            <h3>
+              🎨 現場歌手駐唱 & 手作店內活動
+            </h3>
+
+            <p>
+              店內不定期邀請歌手現場駐唱表演，並舉辦手作體驗課程與節慶特別企劃。最新檔期與消息請至 IG 查看。
+            </p>
+
+          </div>
+
+
+          <a
+            class="btn btn-glass"
+            href="https://www.instagram.com/chasinglight_2025/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            查看 IG 活動
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+
+      <div class="container">
+
+        <div class="section-head">
+
+          <span class="sub-title">
+            ATMOSPHERE
+          </span>
+
+          <h2>
+            環境空間
+          </h2>
+
+          <p>
+            極致視覺衝擊與精緻氣氛角落
+          </p>
+
+        </div>
+
+
+        <div class="gallery-grid">
+
+
+          <div class="gallery-item">
+
+            <img
+              src="out1-1.png"
+              alt="1F 戶外渡假風座位"
+            >
+
+          </div>
+
+
+          <div class="gallery-item">
+
+            <img
+              src="in-3.png"
+              alt="2F 高空酒吧區"
+            >
+
+          </div>
+
+
+          <div class="gallery-item">
+
+            <img
+              src="food-1.png"
+              alt="精緻特調飲品與深夜餐點"
+            >
+
+          </div>
+
+
+          <div class="gallery-item">
+
+            <img
+              src="in-2 (2).png"
+              alt="夜間燈光氛圍角落"
+            >
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Info & Pricing Section -->
+    <section id="info" class="section">
+
+      <div class="container">
+
+        <div class="section-head">
+
+          <span class="sub-title">
+            INFORMATION
+          </span>
+
+          <h2>
+            消費說明與店家資訊
+          </h2>
+
+        </div>
+
+
+        <div class="info-grid">
+
+
+          <!-- 消費與預約 -->
+          <div class="info-card">
+
+            <div>
+
+              <h3>
+                📍 店家地址與消費方式
+              </h3>
+
+              <p>
+                地址：彰化縣花壇鄉寶山路866號（139 縣道旁）
+              </p>
+
+              <p>
+                電話：
+                <a
+                  href="tel:047860776"
+                  style="text-decoration: underline; color: #fff;"
+                >
+                  04-786-0776
+                </a>
+              </p>
+
+
+              <div class="price-box">
+
+                <p>
+                  💳 <strong>最低消費規定：</strong>
+                </p>
+
+                <p style="margin-top: 4px;">
+                  • 平日低消：$350 / 人
+                </p>
+
+                <p>
+                  • 假日低消：$450 / 人
+                </p>
+
+                <p style="font-size: 12px; color: var(--muted); margin-top: 4px;">
+                  * 均需加收 10% 服務費
+                </p>
+
+              </div>
+
+
+              <p style="color: var(--gold); font-size: 13px;">
+                💬 預約提醒：營業時段請直接來電，非營業時間請私訊 IG。
+              </p>
+
+              <p style="color: var(--muted); font-size: 13px;">
+                🐾 寵物規範：寵物友善空間（備有大草皮，請牽繩維持禮貌）。
+              </p>
+
+            </div>
+
+
+            <div style="margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap;">
+
+              <a
+                class="btn btn-gold"
+                href="https://www.instagram.com/chasinglight_2025/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                IG 私訊預約
+              </a>
+
+              <a
+                class="btn btn-glass"
+                href="https://www.google.com/maps/search/?api=1&query=逐光景觀餐廳+彰化縣花壇鄉寶山路866號"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Google 導航
+              </a>
+
+            </div>
+
+          </div>
+
+
+          <!-- 營業時間 -->
+          <div class="info-card">
+
+            <div>
+
+              <h3>
+                🕐 營業時間
+              </h3>
+
+              <ul class="hours-list">
+
+                <li>
+                  <span>週一</span>
+                  <span>公休</span>
+                </li>
+
+                <li>
+                  <span>週二</span>
+                  <span>18:00 – 02:00</span>
+                </li>
+
+                <li>
+                  <span>週三</span>
+                  <span>18:00 – 02:00</span>
+                </li>
+
+                <li>
+                  <span>週四</span>
+                  <span>18:00 – 02:00</span>
+                </li>
+
+                <li>
+                  <span>週五</span>
+                  <span>18:00 – 02:00</span>
+                </li>
+
+                <li>
+                  <span>週六</span>
+                  <span>18:00 – 02:00</span>
+                </li>
+
+                <li>
+                  <span>週日</span>
+                  <span>18:00 – 02:00</span>
+                </li>
+
+              </ul>
+
+            </div>
+
+
+            <a
+              class="btn btn-glass"
+              href="tel:047860776"
+              style="margin-top: 24px; text-align: center; width: 100%;"
+            >
+              營業時段直撥預約 (04-786-0776)
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FAQ Section -->
+    <section class="section">
+
+      <div class="container">
+
+        <div class="section-head">
+
+          <span class="sub-title">
+            FAQ
+          </span>
+
+          <h2>
+            常見問題
+          </h2>
+
+        </div>
+
+
+        <div class="faq-list">
+
+
+          <details>
+
+            <summary>
+              如何預約逐光景觀餐廳？
+            </summary>
+
+            <p>
+              <strong>營業時間內：</strong>
+              請直接撥打電話 04-786-0776。<br>
+
+              <strong>非營業時間：</strong>
+              歡迎透過 Instagram 私訊專頁（@chasinglight_2025）進行預約。
+            </p>
+
+          </details>
+
+
+          <details>
+
+            <summary>
+              最低消費與服務費如何計算？
+            </summary>
+
+            <p>
+              平日低消為每人 $350，假日低消為每人 $450，消費金額均需加收 10% 服務費。
+            </p>
+
+          </details>
+
+
+          <details>
+
+            <summary>
+              餐廳適合帶寵物毛孩前來嗎？
+            </summary>
+
+            <p>
+              非常歡迎！逐光備有廣闊的大草皮，屬寵物友善空間。請攜帶牽繩或禮貌帶，讓毛孩一同享受戶外放風。
+            </p>
+
+          </details>
+
+
+          <details>
+
+            <summary>
+              私人包廂訂位與容納人數？
+            </summary>
+
+            <p>
+              我們設有約可容納 15 人的夢幻水母造景私人包廂，聚會隱私性高，歡迎提前透過電話或 IG 詢問包廂預訂細節。
+            </p>
+
+          </details>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-brand">
+        CHASING LIGHT
+      </div>
+
+      <p>
+        逐光景觀餐廳 ｜ 彰化花壇 139 縣道夜景餐酒館 ． 寵物友善
+      </p>
+
+      <p style="margin-top: 16px; opacity: 0.5;">
+        © <span id="year"></span> CHASING LIGHT. All rights reserved.
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <!-- Mobile Floating Navigation Bar -->
+  <div class="mobile-bar">
+
+    <a
+      href="https://www.google.com/maps/search/?api=1&query=逐光景觀餐廳+彰化縣花壇鄉寶山路866號"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      📍 導航
+    </a>
+
+    <a
+      href="https://www.instagram.com/chasinglight_2025/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="main-btn"
+    >
+      💬 IG 預約
+    </a>
+
+    <a href="tel:047860776">
+      ☎️ 電話
+    </a>
+
+  </div>
+
+
+  <script>
+
+    // Header Glassmorphic Blur on Scroll
+    const header = document.getElementById("header");
+
+    window.addEventListener("scroll", () => {
+      header.classList.toggle(
+        "scrolled",
+        window.scrollY > 40
+      );
+    });
+
+
+    // Auto Footer Year
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+  </script>
+
+</body>
+
+</html>
+```
