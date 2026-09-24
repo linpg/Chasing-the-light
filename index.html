@@ -2,2156 +2,534 @@
 <html lang="zh-Hant-TW">
 
 <head>
-
-<meta charset="UTF-8">
-
-<meta
-  name="viewport"
-  content="width=device-width, initial-scale=1.0"
->
-
-<title>逐光景觀餐廳｜彰化花壇夜景景觀餐廳</title>
-
-<meta
-  name="description"
-  content="逐光景觀餐廳位於彰化花壇寶山路，提供夜間景觀與用餐體驗。適合情侶約會、朋友聚餐與夜晚欣賞彰化景色，可線上查看電子菜單與使用 iCHEF 線上訂位。"
->
-
-<meta
-  name="keywords"
-  content="逐光景觀餐廳,彰化景觀餐廳,彰化夜景餐廳,花壇景觀餐廳,花壇夜景餐廳,彰化約會餐廳,彰化夜景,花壇餐廳,彰化餐廳"
->
-
-<meta name="author" content="逐光景觀餐廳">
-
-<meta name="robots" content="index, follow">
-
-<meta name="theme-color" content="#111111">
-
-<!-- Open Graph -->
-<meta
-  property="og:title"
-  content="逐光景觀餐廳｜彰化花壇夜景景觀餐廳"
->
-
-<meta
-  property="og:description"
-  content="彰化花壇夜景景觀餐廳，提供夜間景觀、用餐與電子菜單，立即查看菜單與線上訂位。"
->
-
-<meta
-  property="og:type"
-  content="restaurant"
->
-
-<meta
-  property="og:locale"
-  content="zh_TW"
->
-
-<!--
-  如果之後有自己的網站網址，
-  可以把下面 URL 改成正式網址。
--->
-<link
-  rel="canonical"
-  href="https://linpg.github.io/zhuguang/"
->
-
-<style>
-
-/* =========================
-   基本設定
-========================= */
-
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-}
-
-html{
-  scroll-behavior:smooth;
-}
-
-body{
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "Noto Sans TC",
-    "Microsoft JhengHei",
-    sans-serif;
-
-  background:#0b0b0b;
-  color:#f5f5f5;
-  line-height:1.7;
-}
-
-a{
-  color:inherit;
-  text-decoration:none;
-}
-
-img{
-  max-width:100%;
-  display:block;
-}
-
-button,
-a{
-  -webkit-tap-highlight-color:transparent;
-}
-
-
-/* =========================
-   共用
-========================= */
-
-.container{
-  width:min(1120px,92%);
-  margin:0 auto;
-}
-
-.section{
-  padding:90px 0;
-}
-
-.section-title{
-  text-align:center;
-  margin-bottom:45px;
-}
-
-.section-title .small{
-  display:block;
-  color:#d7b56d;
-  font-size:13px;
-  letter-spacing:4px;
-  margin-bottom:10px;
-}
-
-.section-title h2{
-  font-size:36px;
-  font-weight:700;
-  letter-spacing:2px;
-}
-
-.section-title p{
-  max-width:680px;
-  margin:15px auto 0;
-  color:#aaa;
-  font-size:15px;
-}
-
-.btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  min-height:50px;
-  padding:0 25px;
-  border-radius:999px;
-  font-weight:700;
-  font-size:15px;
-  transition:.25s;
-  cursor:pointer;
-}
-
-.btn-primary{
-  background:#d7b56d;
-  color:#111;
-}
-
-.btn-primary:hover{
-  background:#e7cb91;
-  transform:translateY(-2px);
-}
-
-.btn-dark{
-  border:1px solid rgba(255,255,255,.35);
-  background:rgba(0,0,0,.25);
-  color:#fff;
-}
-
-.btn-dark:hover{
-  background:#fff;
-  color:#111;
-}
-
-.btn-outline{
-  border:1px solid #d7b56d;
-  color:#d7b56d;
-}
-
-.btn-outline:hover{
-  background:#d7b56d;
-  color:#111;
-}
-
-
-/* =========================
-   Header
-========================= */
-
-header{
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  z-index:1000;
-  transition:.3s;
-}
-
-header.scrolled{
-  background:rgba(0,0,0,.92);
-  backdrop-filter:blur(12px);
-  box-shadow:0 4px 20px rgba(0,0,0,.3);
-}
-
-.navbar{
-  height:76px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-}
-
-.logo{
-  font-size:22px;
-  font-weight:800;
-  letter-spacing:4px;
-  white-space:nowrap;
-}
-
-.logo span{
-  color:#d7b56d;
-}
-
-.nav-links{
-  display:flex;
-  align-items:center;
-  gap:28px;
-  list-style:none;
-}
-
-.nav-links a{
-  font-size:14px;
-  color:#eee;
-  transition:.2s;
-}
-
-.nav-links a:hover{
-  color:#d7b56d;
-}
-
-.nav-reserve{
-  padding:10px 18px;
-  border:1px solid #d7b56d;
-  border-radius:999px;
-  color:#d7b56d !important;
-}
-
-
-/* =========================
-   Hero
-========================= */
-
-.hero{
-  min-height:100vh;
-  position:relative;
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
-  overflow:hidden;
-
-  background:
-    linear-gradient(
-      rgba(0,0,0,.42),
-      rgba(0,0,0,.78)
-    ),
-    url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=2000&q=85")
-    center/cover no-repeat;
-}
-
-.hero::after{
-  content:"";
-  position:absolute;
-  inset:0;
-
-  background:
-    radial-gradient(
-      circle at 50% 45%,
-      rgba(215,181,109,.08),
-      transparent 45%
-    );
-}
-
-.hero-content{
-  position:relative;
-  z-index:2;
-  width:min(900px,92%);
-  text-align:center;
-  padding-top:50px;
-}
-
-.hero-tag{
-  color:#d7b56d;
-  letter-spacing:6px;
-  font-size:14px;
-  margin-bottom:18px;
-}
-
-.hero h1{
-  font-size:clamp(42px,7vw,78px);
-  letter-spacing:8px;
-  font-weight:800;
-  margin-bottom:18px;
-}
-
-.hero-subtitle{
-  font-size:clamp(18px,3vw,28px);
-  letter-spacing:3px;
-  margin-bottom:15px;
-}
-
-.hero-text{
-  max-width:650px;
-  margin:0 auto 32px;
-  color:#ddd;
-  font-size:16px;
-}
-
-.hero-buttons{
-  display:flex;
-  justify-content:center;
-  gap:12px;
-  flex-wrap:wrap;
-}
-
-
-/* =========================
-   About
-========================= */
-
-.about-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:55px;
-  align-items:center;
-}
-
-.about-image{
-  min-height:500px;
-
-  background:
-    linear-gradient(
-      rgba(0,0,0,.12),
-      rgba(0,0,0,.3)
-    ),
-    url("https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1200&q=85")
-    center/cover;
-
-  border-radius:18px;
-}
-
-.about-content h3{
-  font-size:31px;
-  margin-bottom:20px;
-}
-
-.about-content p{
-  color:#aaa;
-  margin-bottom:18px;
-}
-
-.about-highlight{
-  margin-top:30px;
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:15px;
-}
-
-.highlight{
-  padding:20px;
-  border:1px solid #272727;
-  border-radius:12px;
-  background:#111;
-}
-
-.highlight strong{
-  display:block;
-  color:#d7b56d;
-  font-size:22px;
-  margin-bottom:5px;
-}
-
-.highlight span{
-  color:#999;
-  font-size:13px;
-}
-
-
-/* =========================
-   Experience
-========================= */
-
-.experience{
-  background:#101010;
-}
-
-.experience-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
-}
-
-.experience-card{
-  padding:38px 28px;
-  background:#161616;
-  border:1px solid #252525;
-  border-radius:16px;
-  transition:.25s;
-}
-
-.experience-card:hover{
-  transform:translateY(-5px);
-  border-color:#6d5a36;
-}
-
-.icon{
-  width:55px;
-  height:55px;
-  border-radius:50%;
-  background:#211d16;
-  color:#d7b56d;
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
-  font-size:25px;
-  margin-bottom:20px;
-}
-
-.experience-card h3{
-  font-size:20px;
-  margin-bottom:10px;
-}
-
-.experience-card p{
-  color:#999;
-  font-size:14px;
-}
-
-
-/* =========================
-   Gallery
-========================= */
-
-.gallery-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:12px;
-}
-
-.gallery-item{
-  height:260px;
-  overflow:hidden;
-  border-radius:12px;
-  background:#151515;
-}
-
-.gallery-item img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  transition:.45s;
-}
-
-.gallery-item:hover img{
-  transform:scale(1.06);
-}
-
-
-/* =========================
-   Menu
-========================= */
-
-.menu-section{
-  background:#101010;
-}
-
-.menu-box{
-  max-width:900px;
-  margin:0 auto;
-
-  padding:55px 35px;
-
-  text-align:center;
-
-  border:1px solid #3b3222;
-  border-radius:20px;
-
-  background:
-    radial-gradient(
-      circle at center,
-      rgba(215,181,109,.08),
-      transparent 60%
-    ),
-    #141414;
-}
-
-.menu-icon{
-  font-size:48px;
-  margin-bottom:15px;
-}
-
-.menu-box h3{
-  font-size:30px;
-  margin-bottom:12px;
-}
-
-.menu-box p{
-  max-width:650px;
-  margin:0 auto 25px;
-  color:#999;
-}
-
-.menu-buttons{
-  display:flex;
-  justify-content:center;
-  gap:12px;
-  flex-wrap:wrap;
-}
-
-
-/* =========================
-   Reservation
-========================= */
-
-.reservation{
-  background:
-    linear-gradient(
-      rgba(0,0,0,.72),
-      rgba(0,0,0,.85)
-    ),
-    url("https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1800&q=85")
-    center/cover fixed;
-}
-
-.reservation-box{
-  max-width:900px;
-  margin:auto;
-  text-align:center;
-}
-
-.reservation-box h2{
-  font-size:38px;
-  margin-bottom:15px;
-}
-
-.reservation-box p{
-  color:#ccc;
-  margin-bottom:30px;
-}
-
-.reservation-buttons{
-  display:flex;
-  justify-content:center;
-  gap:12px;
-  flex-wrap:wrap;
-}
-
-
-/* =========================
-   Store Info
-========================= */
-
-.info-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:20px;
-}
-
-.info-card{
-  padding:30px;
-  border:1px solid #292929;
-  border-radius:15px;
-  background:#111;
-}
-
-.info-card h3{
-  color:#d7b56d;
-  font-size:18px;
-  margin-bottom:14px;
-}
-
-.info-card p{
-  color:#bbb;
-}
-
-.info-card a{
-  color:#eee;
-}
-
-.info-card a:hover{
-  color:#d7b56d;
-}
-
-.hours{
-  list-style:none;
-  color:#aaa;
-}
-
-.hours li{
-  display:flex;
-  justify-content:space-between;
-  padding:7px 0;
-  border-bottom:1px solid #222;
-}
-
-
-/* =========================
-   FAQ
-========================= */
-
-.faq{
-  background:#101010;
-}
-
-.faq-list{
-  max-width:850px;
-  margin:auto;
-}
-
-details{
-  border-bottom:1px solid #292929;
-  padding:20px 0;
-}
-
-summary{
-  cursor:pointer;
-  font-size:17px;
-  font-weight:700;
-  list-style:none;
-}
-
-summary::-webkit-details-marker{
-  display:none;
-}
-
-summary::after{
-  content:"+";
-  float:right;
-  color:#d7b56d;
-  font-size:22px;
-}
-
-details[open] summary::after{
-  content:"−";
-}
-
-details p{
-  color:#999;
-  padding-top:15px;
-  font-size:14px;
-}
-
-
-/* =========================
-   CTA
-========================= */
-
-.cta{
-  padding:70px 0;
-  text-align:center;
-}
-
-.cta h2{
-  font-size:34px;
-  margin-bottom:12px;
-}
-
-.cta p{
-  color:#999;
-  margin-bottom:25px;
-}
-
-
-/* =========================
-   Footer
-========================= */
-
-footer{
-  background:#070707;
-  border-top:1px solid #202020;
-  padding:45px 0 100px;
-}
-
-.footer-grid{
-  display:grid;
-  grid-template-columns:1.4fr 1fr 1fr;
-  gap:40px;
-}
-
-.footer-logo{
-  font-size:25px;
-  font-weight:800;
-  letter-spacing:4px;
-  margin-bottom:12px;
-}
-
-.footer-logo span{
-  color:#d7b56d;
-}
-
-.footer p{
-  color:#777;
-  font-size:14px;
-}
-
-.footer h4{
-  color:#ddd;
-  margin-bottom:15px;
-}
-
-.footer-links{
-  list-style:none;
-}
-
-.footer-links li{
-  margin-bottom:8px;
-}
-
-.footer-links a{
-  color:#888;
-  font-size:14px;
-}
-
-.footer-links a:hover{
-  color:#d7b56d;
-}
-
-.copyright{
-  margin-top:40px;
-  padding-top:25px;
-  border-top:1px solid #1d1d1d;
-  text-align:center;
-  color:#666;
-  font-size:12px;
-}
-
-
-/* =========================
-   Mobile Bottom Bar
-========================= */
-
-.mobile-bar{
-  display:none;
-
-  position:fixed;
-  bottom:0;
-  left:0;
-  right:0;
-
-  z-index:2000;
-
-  background:rgba(10,10,10,.97);
-  backdrop-filter:blur(12px);
-
-  border-top:1px solid #333;
-
-  grid-template-columns:repeat(3,1fr);
-}
-
-.mobile-bar a{
-  min-height:65px;
-
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-
-  gap:3px;
-
-  font-size:12px;
-  color:#bbb;
-}
-
-.mobile-bar a strong{
-  color:#d7b56d;
-  font-size:18px;
-}
-
-
-/* =========================
-   Responsive
-========================= */
-
-@media(max-width:900px){
-
-  .nav-links{
-    gap:15px;
-  }
-
-  .nav-links a{
-    font-size:13px;
-  }
-
-  .about-grid{
-    grid-template-columns:1fr;
-  }
-
-  .about-image{
-    min-height:380px;
-  }
-
-  .experience-grid{
-    grid-template-columns:1fr;
-  }
-
-  .gallery-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .info-grid{
-    grid-template-columns:1fr;
-  }
-
-  .footer-grid{
-    grid-template-columns:1fr 1fr;
-  }
-
-}
-
-
-@media(max-width:680px){
-
-  body{
-    padding-bottom:65px;
-  }
-
-  .section{
-    padding:65px 0;
-  }
-
-  .navbar{
-    height:64px;
-  }
-
-  .logo{
-    font-size:18px;
-    letter-spacing:3px;
-  }
-
-  .nav-links{
-    display:none;
-  }
-
-  .hero{
-    min-height:100svh;
-  }
-
-  .hero h1{
-    letter-spacing:5px;
-  }
-
-  .hero-tag{
-    letter-spacing:4px;
-  }
-
-  .hero-text{
-    font-size:14px;
-  }
-
-  .hero-buttons{
-    flex-direction:column;
-    align-items:stretch;
-    width:min(330px,100%);
-    margin:auto;
-  }
-
-  .btn{
-    width:100%;
-  }
-
-  .section-title h2{
-    font-size:29px;
-  }
-
-  .about-image{
-    min-height:300px;
-  }
-
-  .about-content h3{
-    font-size:25px;
-  }
-
-  .about-highlight{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .gallery-grid{
-    grid-template-columns:1fr 1fr;
-    gap:8px;
-  }
-
-  .gallery-item{
-    height:180px;
-  }
-
-  .menu-box{
-    padding:40px 20px;
-  }
-
-  .menu-box h3{
-    font-size:25px;
-  }
-
-  .reservation-box h2{
-    font-size:29px;
-  }
-
-  .footer-grid{
-    grid-template-columns:1fr;
-  }
-
-  .mobile-bar{
-    display:grid;
-  }
-
-}
-
-
-/* =========================
-   Scroll reveal
-========================= */
-
-.reveal{
-  opacity:0;
-  transform:translateY(25px);
-  transition:
-    opacity .7s ease,
-    transform .7s ease;
-}
-
-.reveal.show{
-  opacity:1;
-  transform:none;
-}
-
-</style>
-
-
-<!-- =========================
-     Restaurant Schema
-========================= -->
-
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"Restaurant",
-  "name":"逐光景觀餐廳",
-  "description":"位於彰化花壇寶山路的夜景景觀餐廳，提供夜間景觀與用餐體驗。",
-  "telephone":"+886-4-786-0776",
-  "address":{
-    "@type":"PostalAddress",
-    "streetAddress":"寶山路866號",
-    "addressLocality":"花壇鄉",
-    "addressRegion":"彰化縣",
-    "postalCode":"503",
-    "addressCountry":"TW"
-  },
-  "servesCuisine":"餐廳",
-  "priceRange":"$$",
-  "hasMap":"https://www.google.com/maps/search/?api=1&query=逐光景觀餐廳+彰化縣花壇鄉寶山路866號",
-  "menu":"https://online.fliphtml5.com/bbpeq/sdjr/#p=4",
-  "acceptsReservations":true,
-  "potentialAction":{
-    "@type":"ReserveAction",
-    "target":{
-      "@type":"EntryPoint",
-      "urlTemplate":"https://shop.ichefpos.com/store/PXwNNNuL/reserve/storeInfo"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>逐光景觀餐廳｜彰化花壇夜景景觀餐廳</title>
+  <meta name="description" content="逐光景觀餐廳位於彰化花壇寶山路，提供夜間景觀與用餐體驗。營業時段請來電預約，非營業時間請私訊 IG 預約。">
+  <meta name="keywords" content="逐光景觀餐廳,彰化景觀餐廳,彰化夜景餐廳,花壇景觀餐廳,花壇夜景餐廳,彰化約會餐廳,彰化夜景,花壇餐廳">
+  <meta name="author" content="逐光景觀餐廳">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0a0b0d">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="逐光景觀餐廳｜彰化花壇夜景景觀餐廳">
+  <meta property="og:description" content="彰化花壇夜景景觀餐廳，提供夜間景觀、用餐與電子菜單，歡迎透過 IG 私訊或電話預約。">
+  <meta property="og:type" content="restaurant">
+  <meta property="og:locale" content="zh_TW">
+
+  <link rel="canonical" href="https://linpg.github.io/zhuguang/">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* =========================
+       CSS Variables
+    ========================= */
+    :root {
+      --bg-main: #0a0b0e;
+      --bg-card: #12141a;
+      --bg-card-hover: #181b24;
+      --accent: #e5c178;
+      --accent-glow: rgba(229, 193, 120, 0.25);
+      --text-main: #f3f4f6;
+      --text-muted: #9ca3af;
+      --border-color: rgba(255, 255, 255, 0.08);
+      --border-accent: rgba(229, 193, 120, 0.3);
+      --radius-lg: 20px;
+      --radius-md: 12px;
+      --radius-full: 9999px;
+      --font-family: 'Plus Jakarta Sans', 'Noto Sans TC', -apple-system, sans-serif;
     }
-  },
-  "openingHoursSpecification":[
-    {
-      "@type":"OpeningHoursSpecification",
-      "dayOfWeek":[
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "opens":"18:00",
-      "closes":"02:00"
-    }
-  ]
-}
-</script>
 
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-family); background-color: var(--bg-main); color: var(--text-main); line-height: 1.7; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    .container { width: min(1140px, 90%); margin: 0 auto; }
+    .section { padding: 90px 0; position: relative; }
+    .section-title { text-align: center; margin-bottom: 45px; }
+    .section-title .small { display: inline-block; color: var(--accent); font-size: 13px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 8px; padding: 4px 12px; background: rgba(229, 193, 120, 0.08); border-radius: var(--radius-full); border: 1px solid rgba(229, 193, 120, 0.15); }
+    .section-title h2 { font-size: clamp(28px, 4vw, 38px); font-weight: 800; color: #fff; }
+    .section-title p { max-width: 600px; margin: 12px auto 0; color: var(--text-muted); font-size: 15px; }
+
+    /* 按鈕樣式 */
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 52px; padding: 0 26px; border-radius: var(--radius-full); font-weight: 700; font-size: 15px; transition: all 0.3s ease; cursor: pointer; border: 1px solid transparent; }
+    .btn-primary { background: var(--accent); color: #000; box-shadow: 0 4px 20px var(--accent-glow); }
+    .btn-primary:hover { background: #eed599; transform: translateY(-2px); }
+    .btn-dark { background: rgba(255, 255, 255, 0.05); border-color: var(--border-color); color: #fff; backdrop-filter: blur(10px); }
+    .btn-dark:hover { background: rgba(255, 255, 255, 0.12); transform: translateY(-2px); }
+    .btn-outline { border-color: var(--border-accent); color: var(--accent); background: rgba(229, 193, 120, 0.03); }
+    .btn-outline:hover { background: var(--accent); color: #000; transform: translateY(-2px); }
+
+    .glass-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-lg); transition: all 0.3s ease; }
+    .glass-card:hover { border-color: var(--border-accent); background: var(--bg-card-hover); }
+
+    /* Header */
+    header { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; transition: all 0.3s ease; }
+    header.scrolled { background: rgba(10, 11, 14, 0.88); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border-color); }
+    .navbar { height: 80px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-size: 22px; font-weight: 800; letter-spacing: 3px; color: #fff; }
+    .logo span { color: var(--accent); }
+    .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
+    .nav-links a { font-size: 14px; font-weight: 500; color: var(--text-muted); transition: color 0.2s ease; }
+    .nav-links a:hover { color: #fff; }
+    .nav-reserve { padding: 8px 20px; border: 1px solid var(--border-accent); border-radius: var(--radius-full); color: var(--accent) !important; background: rgba(229, 193, 120, 0.05); }
+
+    /* Hero */
+    .hero { min-height: 100vh; position: relative; display: flex; align-items: center; justify-content: center; padding: 120px 0 60px; background: linear-gradient(180deg, rgba(10, 11, 14, 0.4) 0%, rgba(10, 11, 14, 0.95) 100%), url("https://ants.tw/wp-content/uploads/20260130193456_0_8aa61f-scaled.jpg") center/cover no-repeat; }
+    .hero-content { position: relative; z-index: 2; max-width: 800px; text-align: center; }
+    .hero-tag { display: inline-block; color: var(--accent); letter-spacing: 6px; font-size: 13px; font-weight: 700; margin-bottom: 20px; padding: 6px 16px; background: rgba(229, 193, 120, 0.1); border-radius: var(--radius-full); border: 1px solid rgba(229, 193, 120, 0.2); }
+    .hero h1 { font-size: clamp(48px, 8vw, 84px); letter-spacing: 6px; font-weight: 800; margin-bottom: 12px; color: #fff; }
+    .hero-subtitle { font-size: clamp(20px, 3.5vw, 32px); letter-spacing: 4px; color: var(--accent); font-weight: 700; margin-bottom: 24px; }
+    .hero-text { max-width: 600px; margin: 0 auto 30px; color: var(--text-muted); font-size: 16px; }
+    .reservation-notice { background: rgba(229, 193, 120, 0.1); border: 1px solid var(--border-accent); padding: 12px 20px; border-radius: var(--radius-md); max-width: 550px; margin: 0 auto 30px; font-size: 14px; color: var(--accent); font-weight: 500; }
+    .hero-buttons { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
+
+    /* About */
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+    .about-image { min-height: 460px; background: linear-gradient(180deg, rgba(0,0,0,0) 50%, rgba(10, 11, 14, 0.8) 100%), url("https://ants.tw/wp-content/uploads/20260130193610_0_e2dcc1-scaled.jpg") center/cover; border-radius: var(--radius-lg); border: 1px solid var(--border-color); }
+    .about-content h3 { font-size: 30px; font-weight: 800; margin-bottom: 20px; }
+    .about-content p { color: var(--text-muted); margin-bottom: 18px; }
+
+    /* Experience */
+    .experience-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .experience-card { padding: 40px 30px; }
+    .icon-wrapper { width: 56px; height: 56px; border-radius: var(--radius-md); background: rgba(229, 193, 120, 0.1); border: 1px solid rgba(229, 193, 120, 0.2); color: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 26px; margin-bottom: 24px; }
+
+    /* Gallery */
+    .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .gallery-item { height: 260px; overflow: hidden; border-radius: var(--radius-md); position: relative; }
+    .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+    .gallery-item:hover img { transform: scale(1.08); }
+
+    /* Menu */
+    .menu-box { max-width: 860px; margin: 0 auto; padding: 60px 40px; text-align: center; }
+
+    /* Store Info */
+    .info-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+    .info-card { padding: 36px; display: flex; flex-direction: column; justify-content: space-between; }
+    .hours { list-style: none; color: var(--text-muted); font-size: 14px; margin-bottom: 20px; }
+    .hours li { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--border-color); }
+    .status-tag { display: inline-block; padding: 4px 10px; border-radius: var(--radius-full); font-size: 12px; font-weight: 700; margin-left: 10px; }
+    .status-open { background: rgba(34, 197, 94, 0.15); color: #4ade80; border: 1px solid rgba(34, 197, 94, 0.3); }
+    .status-closed { background: rgba(239, 68, 68, 0.15); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.3); }
+
+    /* FAQ */
+    .faq-list { max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px; }
+    details { padding: 20px 28px; border-radius: var(--radius-md); background: var(--bg-card); border: 1px solid var(--border-color); }
+    summary { cursor: pointer; font-size: 17px; font-weight: 700; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+    summary::after { content: "+"; color: var(--accent); font-size: 24px; }
+    details[open] summary::after { content: "−"; }
+    details p { color: var(--text-muted); padding-top: 14px; font-size: 15px; }
+
+    /* Footer */
+    footer { background: #060709; border-top: 1px solid var(--border-color); padding: 60px 0 110px; }
+    .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 48px; }
+    .copyright { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border-color); text-align: center; color: #6b7280; font-size: 13px; }
+
+    /* Mobile Bar */
+    .mobile-bar { display: none; position: fixed; bottom: 20px; left: 4%; right: 4%; z-index: 2000; background: rgba(18, 20, 26, 0.92); backdrop-filter: blur(20px); border: 1px solid var(--border-accent); border-radius: var(--radius-full); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); grid-template-columns: repeat(3, 1fr); padding: 6px; }
+    .mobile-bar a { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 8px 0; font-size: 12px; font-weight: 700; color: var(--text-muted); border-radius: var(--radius-full); }
+    .mobile-bar a.primary-action { background: var(--accent); color: #000; }
+
+    @media (max-width: 900px) {
+      .about-grid, .experience-grid, .info-grid, .footer-grid { grid-template-columns: 1fr; }
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 680px) {
+      body { padding-bottom: 80px; }
+      .nav-links { display: none; }
+      .hero-buttons { flex-direction: column; }
+      .btn { width: 100%; }
+      .mobile-bar { display: grid; }
+    }
+
+    .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease; }
+    .reveal.show { opacity: 1; transform: translateY(0); }
+  </style>
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "逐光景觀餐廳",
+    "description": "位於彰化花壇寶山路的夜景景觀餐廳，提供夜間景觀與用餐體驗。",
+    "telephone": "+886-4-786-0776",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "寶山路866號",
+      "addressLocality": "花壇鄉",
+      "addressRegion": "彰化縣",
+      "postalCode": "503",
+      "addressCountry": "TW"
+    },
+    "hasMap": "https://www.google.com/maps/search/?api=1&query=逐光景觀餐廳+彰化縣花壇鄉寶山路866號",
+    "menu": "https://online.fliphtml5.com/bbpeq/sdjr/#p=4"
+  }
+  </script>
 </head>
-
 
 <body>
 
-
-<!-- =========================
-     Header
-========================= -->
-
-<header id="header">
-
-  <div class="container navbar">
-
-    <a href="#top" class="logo">
-      逐光<span>景觀餐廳</span>
-    </a>
-
-    <ul class="nav-links">
-
-      <li>
-        <a href="#about">關於逐光</a>
-      </li>
-
-      <li>
-        <a href="#experience">用餐體驗</a>
-      </li>
-
-      <li>
-        <a href="#gallery">環境</a>
-      </li>
-
-      <li>
-        <a href="#menu">電子菜單</a>
-      </li>
-
-      <li>
-        <a href="#info">店家資訊</a>
-      </li>
-
-      <li>
-        <a
-          class="nav-reserve"
-          href="https://shop.ichefpos.com/store/PXwNNNuL/reserve/storeInfo"
-          target="_blank"
-          rel="noopener"
-        >
-          線上訂位
-        </a>
-      </li>
-
-    </ul>
-
-  </div>
-
-</header>
-
-
-<!-- =========================
-     Hero
-========================= -->
-
-<main id="top">
-
-<section class="hero">
-
-  <div class="hero-content">
-
-    <div class="hero-tag">
-      CHASING LIGHT
+  <!-- Header -->
+  <header id="header">
+    <div class="container navbar">
+      <a href="#top" class="logo">逐光<span>景觀餐廳</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">關於逐光</a></li>
+        <li><a href="#experience">用餐體驗</a></li>
+        <li><a href="#gallery">環境空間</a></li>
+        <li><a href="#menu">電子菜單</a></li>
+        <li><a href="#info">店家資訊</a></li>
+        <li>
+          <!-- 請將下方 instagram.com/ 替換為您的正式 IG 帳號網址 -->
+          <a class="nav-reserve" href="https://www.instagram.com/" target="_blank" rel="noopener">💬 私訊 IG 預約</a>
+        </li>
+      </ul>
     </div>
+  </header>
 
-    <h1>
-      逐光
-    </h1>
-
-    <div class="hero-subtitle">
-      景觀餐廳
-    </div>
-
-    <p class="hero-text">
-      在彰化花壇的夜色之中，
-      找一個舒服的位置，
-      看景、用餐、聊天，
-      享受屬於夜晚的片刻時光。
-    </p>
-
-    <div class="hero-buttons">
-
-      <a
-        class="btn btn-primary"
-        href="https://shop.ichefpos.com/store/PXwNNNuL/reserve/storeInfo"
-        target="_blank"
-        rel="noopener"
-      >
-        📅 立即線上訂位
-      </a>
-
-      <a
-        class="btn btn-dark"
-        href="https://online.fliphtml5.com/bbpeq/sdjr/#p=4"
-        target="_blank"
-        rel="noopener"
-      >
-        🍽️ 查看電子菜單
-      </a>
-
-      <a
-        class="btn btn-dark"
-        href="https://www.google.com/maps/search/?api=1&query=逐光景觀餐廳+彰化縣花壇鄉寶山路866號"
-        target="_blank"
-        rel="noopener"
-      >
-        📍 Google Maps
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     About
-========================= -->
-
-<section
-  id="about"
-  class="section reveal"
->
-
-  <div class="container">
-
-    <div class="section-title">
-
-      <span class="small">
-        ABOUT CHASING LIGHT
-      </span>
-
-      <h2>
-        關於逐光
-      </h2>
-
-      <p>
-        不只是吃一頓飯，也讓夜晚多一點值得記住的風景。
-      </p>
-
-    </div>
-
-
-    <div class="about-grid">
-
-      <div class="about-image"></div>
-
-
-      <div class="about-content">
-
-        <h3>
-          在夜色裡，慢慢享受一頓飯
-        </h3>
-
-        <p>
-          逐光景觀餐廳位於彰化縣花壇鄉寶山路，
-          以夜間景觀與用餐體驗為主。
+  <!-- Hero Section -->
+  <main id="top">
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-tag">CHASING LIGHT</div>
+        <h1>逐光</h1>
+        <div class="hero-subtitle">景觀餐廳</div>
+        <p class="hero-text">
+          在彰化花壇的夜色之中，找一個舒適的位置，<br>
+          看景、用餐、微醺聊天，享受專屬於夜晚的片刻時光。
         </p>
 
-        <p>
-          如果你正在找彰化夜景餐廳、
-          花壇景觀餐廳，
-          或是想找一個適合約會、聚餐、
-          聊天放鬆的夜晚去處，
-          可以先從逐光開始。
-        </p>
-
-        <p>
-          建議出發前先查看最新營業資訊，
-          也可以直接透過線上訂位系統安排座位。
-        </p>
-
-
-        <div class="about-highlight">
-
-          <div class="highlight">
-
-            <strong>
-              夜間
-            </strong>
-
-            <span>
-              夜晚景觀用餐
-            </span>
-
-          </div>
-
-
-          <div class="highlight">
-
-            <strong>
-              景觀
-            </strong>
-
-            <span>
-              享受夜間視野
-            </span>
-
-          </div>
-
-
-          <div class="highlight">
-
-            <strong>
-              約會
-            </strong>
-
-            <span>
-              適合兩人用餐
-            </span>
-
-          </div>
-
-
-          <div class="highlight">
-
-            <strong>
-              聚餐
-            </strong>
-
-            <span>
-              朋友聚會選擇
-            </span>
-
-          </div>
-
+        <!-- 訂位提示文字 -->
+        <div class="reservation-notice">
+          📢 <strong>預約提示：</strong> 營業時段請直接來電，非營業時間請私訊 IG 預約
         </div>
 
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     Experience
-========================= -->
-
-<section
-  id="experience"
-  class="section experience reveal"
->
-
-  <div class="container">
-
-    <div class="section-title">
-
-      <span class="small">
-        THE EXPERIENCE
-      </span>
-
-      <h2>
-        用餐體驗
-      </h2>
-
-      <p>
-        把吃飯變成一段舒服的夜晚時光。
-      </p>
-
-    </div>
-
-
-    <div class="experience-grid">
-
-
-      <div class="experience-card">
-
-        <div class="icon">
-          🌙
-        </div>
-
-        <h3>
-          夜間景觀
-        </h3>
-
-        <p>
-          夜晚來到逐光，
-          可以一邊用餐，一邊享受夜間景觀。
-        </p>
-
-      </div>
-
-
-      <div class="experience-card">
-
-        <div class="icon">
-          🍽️
-        </div>
-
-        <h3>
-          景觀用餐
-        </h3>
-
-        <p>
-          找個舒服的位置坐下來，
-          讓用餐不只是快速吃完一餐。
-        </p>
-
-      </div>
-
-
-      <div class="experience-card">
-
-        <div class="icon">
-          ✨
-        </div>
-
-        <h3>
-          夜晚聚會
-        </h3>
-
-        <p>
-          適合約會、朋友聚餐，
-          或想找個地方放慢腳步的夜晚。
-        </p>
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     Gallery
-========================= -->
-
-<section
-  id="gallery"
-  class="section reveal"
->
-
-  <div class="container">
-
-    <div class="section-title">
-
-      <span class="small">
-        GALLERY
-      </span>
-
-      <h2>
-        環境與氛圍
-      </h2>
-
-      <p>
-        這裡目前先放網站版型照片，
-        之後換成逐光自己的店景照片即可。
-      </p>
-
-    </div>
-
-
-    <div class="gallery-grid">
-
-
-      <div class="gallery-item">
-
-        <img
-          src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1000&q=85"
-          alt="逐光景觀餐廳景觀用餐環境"
-          loading="lazy"
-        >
-
-      </div>
-
-
-      <div class="gallery-item">
-
-        <img
-          src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=85"
-          alt="彰化景觀餐廳用餐空間"
-          loading="lazy"
-        >
-
-      </div>
-
-
-      <div class="gallery-item">
-
-        <img
-          src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1000&q=85"
-          alt="夜間餐廳用餐氛圍"
-          loading="lazy"
-        >
-
-      </div>
-
-
-      <div class="gallery-item">
-
-        <img
-          src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=85"
-          alt="景觀餐廳餐桌"
-          loading="lazy"
-        >
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     Menu
-========================= -->
-
-<section
-  id="menu"
-  class="section menu-section reveal"
->
-
-  <div class="container">
-
-    <div class="section-title">
-
-      <span class="small">
-        MENU
-      </span>
-
-      <h2>
-        電子菜單
-      </h2>
-
-      <p>
-        出發前先看看目前的完整菜單，
-        再決定今天想吃什麼。
-      </p>
-
-    </div>
-
-
-    <div class="menu-box">
-
-      <div class="menu-icon">
-        🍽️
-      </div>
-
-      <h3>
-        查看逐光完整電子菜單
-      </h3>
-
-      <p>
-        菜單會由逐光目前使用的電子菜單頁面提供，
-        餐點內容與價格以現場及電子菜單最新資訊為準。
-      </p>
-
-      <div class="menu-buttons">
-
-        <a
-          class="btn btn-primary"
-          href="https://online.fliphtml5.com/bbpeq/sdjr/#p=4"
-          target="_blank"
-          rel="noopener"
-        >
-          開啟完整電子菜單
-        </a>
-
-        <a
-          class="btn btn-outline"
-          href="https://shop.ichefpos.com/store/PXwNNNuL/reserve/storeInfo"
-          target="_blank"
-          rel="noopener"
-        >
-          看完菜單直接訂位
-        </a>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     Reservation
-========================= -->
-
-<section
-  id="reservation"
-  class="section reservation reveal"
->
-
-  <div class="container">
-
-    <div class="reservation-box">
-
-      <h2>
-        想來逐光？
-      </h2>
-
-      <p>
-        可以直接使用 iCHEF 線上訂位，
-        或透過電話與店家聯繫。
-      </p>
-
-
-      <div class="reservation-buttons">
-
-        <a
-          class="btn btn-primary"
-          href="https://shop.ichefpos.com/store/PXwNNNuL/reserve/storeInfo"
-          target="_blank"
-          rel="noopener"
-        >
-          📅 iCHEF 線上訂位
-        </a>
-
-
-        <a
-          class="btn btn-dark"
-          href="tel:047860776"
-        >
-          ☎️ 直接撥打電話
-        </a>
-
-
-        <a
-          class="btn btn-dark"
-          href="https://www.google.com/maps/search/?api=1&query=逐光景觀餐廳+彰化縣花壇鄉寶山路866號"
-          target="_blank"
-          rel="noopener"
-        >
-          📍 開啟導航
-        </a>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     Store Info
-========================= -->
-
-<section
-  id="info"
-  class="section reveal"
->
-
-  <div class="container">
-
-    <div class="section-title">
-
-      <span class="small">
-        INFORMATION
-      </span>
-
-      <h2>
-        店家資訊
-      </h2>
-
-      <p>
-        出發前可以先確認地址、電話與營業時間。
-      </p>
-
-    </div>
-
-
-    <div class="info-grid">
-
-
-      <!-- Address -->
-
-      <div class="info-card">
-
-        <h3>
-          📍 店家地址
-        </h3>
-
-        <p>
-          彰化縣花壇鄉寶山路866號
-        </p>
-
-        <br>
-
-        <a
-          class="btn btn-outline"
-          href="https://www.google.com/maps/search/?api=1&query=逐光景觀餐廳+彰化縣花壇鄉寶山路866號"
-          target="_blank"
-          rel="noopener"
-        >
-          開啟 Google Maps
-        </a>
-
-      </div>
-
-
-      <!-- Phone -->
-
-      <div class="info-card">
-
-        <h3>
-          ☎️ 聯絡電話
-        </h3>
-
-        <p>
-          <a href="tel:047860776">
-            04-786-0776
+        <div class="hero-buttons">
+          <!-- 請將 https://www.instagram.com/ 替換為實際 IG 連結 -->
+          <a class="btn btn-primary" href="https://www.instagram.com/" target="_blank" rel="noopener">
+            💬 私訊 IG 預約
           </a>
-        </p>
-
-        <br>
-
-        <a
-          class="btn btn-outline"
-          href="tel:047860776"
-        >
-          撥打電話
-        </a>
-
+          <a class="btn btn-dark" href="tel:047860776">
+            ☎️ 來電預約 (04-786-0776)
+          </a>
+          <a class="btn btn-dark" href="https://online.fliphtml5.com/bbpeq/sdjr/#p=4" target="_blank" rel="noopener">
+            🍽️ 查看電子菜單
+          </a>
+        </div>
       </div>
-
-
-      <!-- Hours -->
-
-      <div class="info-card">
-
-        <h3>
-          🕐 營業時間
-        </h3>
-
-        <ul class="hours">
-
-          <li>
-            <span>週一</span>
-            <span>休息</span>
-          </li>
-
-          <li>
-            <span>週二</span>
-            <span>18:00–02:00</span>
-          </li>
-
-          <li>
-            <span>週三</span>
-            <span>18:00–02:00</span>
-          </li>
-
-          <li>
-            <span>週四</span>
-            <span>18:00–02:00</span>
-          </li>
-
-          <li>
-            <span>週五</span>
-            <span>18:00–02:00</span>
-          </li>
-
-          <li>
-            <span>週六</span>
-            <span>18:00–02:00</span>
-          </li>
-
-          <li>
-            <span>週日</span>
-            <span>18:00–02:00</span>
-          </li>
-
-        </ul>
-
-      </div>
-
-
-      <!-- Reservation -->
-
-      <div class="info-card">
-
-        <h3>
-          📅 線上訂位
-        </h3>
-
-        <p>
-          逐光目前使用 iCHEF 線上訂位系統。
-        </p>
-
-        <br>
-
-        <a
-          class="btn btn-primary"
-          href="https://shop.ichefpos.com/store/PXwNNNuL/reserve/storeInfo"
-          target="_blank"
-          rel="noopener"
-        >
-          前往線上訂位
-        </a>
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     FAQ
-========================= -->
-
-<section
-  class="section faq reveal"
->
-
-  <div class="container">
-
-    <div class="section-title">
-
-      <span class="small">
-        FAQ
-      </span>
-
-      <h2>
-        常見問題
-      </h2>
-
-    </div>
-
-
-    <div class="faq-list">
-
-
-      <details>
-
-        <summary>
-          逐光景觀餐廳在哪裡？
-        </summary>
-
-        <p>
-          逐光景觀餐廳位於彰化縣花壇鄉寶山路866號。
-          可以直接使用 Google Maps 導航前往。
-        </p>
-
-      </details>
-
-
-      <details>
-
-        <summary>
-          逐光幾點開始營業？
-        </summary>
-
-        <p>
-          目前網站整理的營業時間為週二至週日
-          18:00–02:00，週一休息。
-          若遇特殊節日或臨時異動，建議出發前先確認店家最新公告。
-        </p>
-
-      </details>
-
-
-      <details>
-
-        <summary>
-          可以線上訂位嗎？
-        </summary>
-
-        <p>
-          可以。
-          網站直接提供 iCHEF 線上訂位入口，
-          可以點擊「線上訂位」前往訂位頁面。
-        </p>
-
-      </details>
-
-
-      <details>
-
-        <summary>
-          可以先看菜單嗎？
-        </summary>
-
-        <p>
-          可以。
-          網站提供逐光目前使用的電子菜單入口，
-          可以先查看完整電子菜單，再決定是否前往用餐。
-        </p>
-
-      </details>
-
-
-      <details>
-
-        <summary>
-          要怎麼前往逐光？
-        </summary>
-
-        <p>
-          可以直接點擊網站上的「Google Maps」或「開啟導航」，
-          由 Google Maps 規劃前往路線。
-        </p>
-
-      </details>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     CTA
-========================= -->
-
-<section class="cta reveal">
-
-  <div class="container">
-
-    <h2>
-      今晚，來逐光看看
-    </h2>
-
-    <p>
-      先看菜單，再決定今晚的行程。
-    </p>
-
-    <div class="hero-buttons">
-
-      <a
-        class="btn btn-primary"
-        href="https://shop.ichefpos.com/store/PXwNNNuL/reserve/storeInfo"
-        target="_blank"
-        rel="noopener"
-      >
-        📅 線上訂位
-      </a>
-
-      <a
-        class="btn btn-outline"
-        href="https://online.fliphtml5.com/bbpeq/sdjr/#p=4"
-        target="_blank"
-        rel="noopener"
-      >
-        🍽️ 查看菜單
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-
-</main>
-
-
-<!-- =========================
-     Footer
-========================= -->
-
-<footer>
-
-  <div class="container">
-
-    <div class="footer-grid">
-
-
-      <div>
-
-        <div class="footer-logo">
-          逐光<span>景觀餐廳</span>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section reveal">
+      <div class="container">
+        <div class="section-title">
+          <span class="small">ABOUT CHASING LIGHT</span>
+          <h2>關於逐光</h2>
+          <p>不只是吃一頓飯，更是讓夜晚多了一份值得珍藏的風景。</p>
         </div>
 
-        <p>
-          彰化花壇夜景景觀餐廳。
-        </p>
+        <div class="about-grid">
+          <div class="about-image"></div>
+          <div class="about-content">
+            <h3>在靜謐夜色裡<br>慢慢享受精緻佳餚</h3>
+            <p>逐光景觀餐廳座落於彰化縣花壇鄉寶山路，專為夜間景觀與沉浸式用餐體驗所打造。</p>
+            <p>無論您是在尋找彰化約會餐廳、夜景秘境，或是想與好友聚餐放鬆，逐光都將為您提供絕佳的視野與愜意的氛圍。</p>
+            <p style="color: var(--accent); font-weight: 500;">
+              ☎️ 訂位專線：04-786-0776<br>
+              💬 營業時間外歡迎點擊上方按鈕透過 Instagram 私訊預約。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <p>
-          夜間景觀 × 用餐 × 約會 × 聚餐
-        </p>
+    <!-- Experience Section -->
+    <section id="experience" class="section reveal">
+      <div class="container">
+        <div class="section-title">
+          <span class="small">THE EXPERIENCE</span>
+          <h2>用餐體驗</h2>
+          <p>把晚餐與宵夜，昇華為一段愜意美好的夜晚時光。</p>
+        </div>
 
+        <div class="experience-grid">
+          <div class="glass-card experience-card">
+            <div class="icon-wrapper">🌙</div>
+            <h3>夜間景觀</h3>
+            <p>遠離城市的喧囂，在靜謐的山頭點亮燈火，一邊品嚐美食，一邊飽覽彰化平原的萬家燈火。</p>
+          </div>
+          <div class="glass-card experience-card">
+            <div class="icon-wrapper">🍽️</div>
+            <h3>美味餐點</h3>
+            <p>精心設計的豐富菜單與飲品，滿足不同顧客的味蕾，讓景觀與美味相得益彰。</p>
+          </div>
+          <div class="glass-card experience-card">
+            <div class="icon-wrapper">✨</div>
+            <h3>放鬆氛圍</h3>
+            <p>舒適的座席安排與質感燈光設計，非常適合情侶約會、朋友聚會或慶祝重要時刻。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section reveal">
+      <div class="container">
+        <div class="section-title">
+          <span class="small">GALLERY</span>
+          <h2>環境與氛圍</h2>
+          <p>預覽逐光餐廳的真實景觀與現場空間。</p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <!-- 替換說明：將 src 改為現場照片檔名，如 "images/gallery-1.jpg" -->
+            <img src="https://ants.tw/wp-content/uploads/20260130193456_0_8aa61f-scaled.jpg" alt="逐光景觀餐廳現場夜景" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="https://ants.tw/wp-content/uploads/20260130193610_0_e2dcc1-scaled.jpg" alt="逐光景觀餐廳戶外用餐區" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1000&q=85" alt="夜間用餐氛圍" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=85" alt="景觀餐桌" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="section reveal">
+      <div class="container">
+        <div class="section-title">
+          <span class="small">MENU</span>
+          <h2>電子菜單</h2>
+          <p>出發前可線上查閱最新餐點與價格資訊。</p>
+        </div>
+
+        <div class="glass-card menu-box">
+          <div class="menu-icon">🍽️</div>
+          <h3>線上預覽完整菜單</h3>
+          <p>我們提供線上電子菜單，方便您隨時透過手機查閱餐點、飲品與各項點心選項。</p>
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="https://online.fliphtml5.com/bbpeq/sdjr/#p=4" target="_blank" rel="noopener">
+              開啟線上電子菜單
+            </a>
+            <a class="btn btn-outline" href="https://www.instagram.com/" target="_blank" rel="noopener">
+              看完菜單私訊 IG 預約
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Store Info Section -->
+    <section id="info" class="section reveal">
+      <div class="container">
+        <div class="section-title">
+          <span class="small">INFORMATION</span>
+          <h2>店家資訊</h2>
+          <p>快速查看地址、營業時間與預約管道。</p>
+        </div>
+
+        <div class="info-grid">
+          <!-- Address & Phone -->
+          <div class="glass-card info-card">
+            <div>
+              <h3>📍 店家地址與預約專線</h3>
+              <p>彰化縣花壇鄉寶山路866號</p>
+              <p style="margin-top: 10px;">
+                ☎️ 營業時間電話：<a href="tel:047860776" style="color:#fff; font-weight: bold; text-decoration:underline;">04-786-0776</a>
+              </p>
+              <p style="margin-top: 6px; font-size: 14px; color: var(--accent);">
+                💬 非營業時間：請點擊下方按鈕私訊 IG 預約
+              </p>
+            </div>
+            <div style="margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap;">
+              <a class="btn btn-primary" href="https://www.instagram.com/" target="_blank" rel="noopener">
+                💬 私訊 IG 預約
+              </a>
+              <a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&query=逐光景觀餐廳+彰化縣花壇鄉寶山路866號" target="_blank" rel="noopener">
+                📍 地圖導航
+              </a>
+            </div>
+          </div>
+
+          <!-- Hours & Status -->
+          <div class="glass-card info-card">
+            <div>
+              <h3>
+                🕐 營業時間
+                <span id="open-status" class="status-tag"></span>
+              </h3>
+              <ul class="hours">
+                <li data-day="1"><span>週一</span><span>公休</span></li>
+                <li data-day="2"><span>週二</span><span>18:00 – 02:00</span></li>
+                <li data-day="3"><span>週三</span><span>18:00 – 02:00</span></li>
+                <li data-day="4"><span>週四</span><span>18:00 – 02:00</span></li>
+                <li data-day="5"><span>週五</span><span>18:00 – 02:00</span></li>
+                <li data-day="6"><span>週六</span><span>18:00 – 02:00</span></li>
+                <li data-day="0"><span>週日</span><span>18:00 – 02:00</span></li>
+              </ul>
+            </div>
+            <div>
+              <a class="btn btn-outline" href="tel:047860776" style="width: 100%;">
+                ☎️ 營業時間撥打 04-786-0776
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section reveal">
+      <div class="container">
+        <div class="section-title">
+          <span class="small">FAQ</span>
+          <h2>常見問題</h2>
+        </div>
+
+        <div class="faq-list">
+          <details>
+            <summary>要如何預約逐光景觀餐廳？</summary>
+            <p><strong>營業時間內：</strong>請直接撥打電話 04-786-0776 來電預約。<br><strong>非營業時間：</strong>歡迎透過 Instagram 私訊專頁進行預約。</p>
+          </details>
+
+          <details>
+            <summary>營業時間為何？有公休日嗎？</summary>
+            <p>營業時間為週二至週日 18:00–02:00，固定週一公休。如遇特殊節日公休，請依店家官方最新公告為主。</p>
+          </details>
+
+          <details>
+            <summary>逐光景觀餐廳位置在哪裡？</summary>
+            <p>逐光景觀餐廳位於彰化縣花壇鄉寶山路866號，點擊網站上的導航按鈕即可透過 Google Maps 開車抵達。</p>
+          </details>
+
+          <details>
+            <summary>可以事先參考菜單內容嗎？</summary>
+            <p>可以的！網站內提供電子菜單連結，您可以隨時查閱完整的餐點與飲料項目。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">逐光<span>景觀餐廳</span></div>
+          <p>彰化花壇夜景景觀餐廳。</p>
+          <p style="margin-top: 4px;">夜間景觀 × 精致餐點 × 約會聚餐</p>
+        </div>
+
+        <div>
+          <h4>快速連結</h4>
+          <ul class="footer-links">
+            <li><a href="#about">關於逐光</a></li>
+            <li><a href="#experience">用餐體驗</a></li>
+            <li><a href="#gallery">環境空間</a></li>
+            <li><a href="#menu">電子菜單</a></li>
+            <li><a href="#info">店家資訊</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>預約與服務</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">💬 私訊 IG 預約</a></li>
+            <li><a href="tel:047860776">☎️ 預約電話：04-786-0776</a></li>
+            <li><a href="https://online.fliphtml5.com/bbpeq/sdjr/#p=4" target="_blank" rel="noopener">🍽️ 電子菜單</a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=逐光景觀餐廳+彰化縣花壇鄉寶山路866號" target="_blank" rel="noopener">📍 Google Maps 導航</a></li>
+          </ul>
+        </div>
       </div>
 
-
-      <div>
-
-        <h4>
-          快速連結
-        </h4>
-
-        <ul class="footer-links">
-
-          <li>
-            <a href="#about">
-              關於逐光
-            </a>
-          </li>
-
-          <li>
-            <a href="#experience">
-              用餐體驗
-            </a>
-          </li>
-
-          <li>
-            <a href="#gallery">
-              環境
-            </a>
-          </li>
-
-          <li>
-            <a href="#menu">
-              電子菜單
-            </a>
-          </li>
-
-          <li>
-            <a href="#info">
-              店家資訊
-            </a>
-          </li>
-
-        </ul>
-
+      <div class="copyright">
+        © <span id="year"></span> 逐光景觀餐廳 Chasing Light Restaurant. All rights reserved.
       </div>
-
-
-      <div>
-
-        <h4>
-          快速操作
-        </h4>
-
-        <ul class="footer-links">
-
-          <li>
-            <a
-              href="https://shop.ichefpos.com/store/PXwNNNuL/reserve/storeInfo"
-              target="_blank"
-              rel="noopener"
-            >
-              線上訂位
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="https://online.fliphtml5.com/bbpeq/sdjr/#p=4"
-              target="_blank"
-              rel="noopener"
-            >
-              電子菜單
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="https://www.google.com/maps/search/?api=1&query=逐光景觀餐廳+彰化縣花壇鄉寶山路866號"
-              target="_blank"
-              rel="noopener"
-            >
-              Google Maps
-            </a>
-          </li>
-
-          <li>
-            <a href="tel:047860776">
-              04-786-0776
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-
     </div>
+  </footer>
 
-
-    <div class="copyright">
-
-      © <span id="year"></span>
-      逐光景觀餐廳｜Chasing Light Restaurant
-
-    </div>
-
+  <!-- Mobile Floating Bottom Bar -->
+  <div class="mobile-bar">
+    <a href="https://www.google.com/maps/search/?api=1&query=逐光景觀餐廳+彰化縣花壇鄉寶山路866號" target="_blank" rel="noopener">
+      <strong>📍</strong> 導航
+    </a>
+    <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="primary-action">
+      <strong>💬</strong> IG 私訊預約
+    </a>
+    <a href="tel:047860776">
+      <strong>☎️</strong> 電話
+    </a>
   </div>
 
-</footer>
-
-
-<!-- =========================
-     Mobile Bottom Bar
-========================= -->
-
-<div class="mobile-bar">
-
-
-  <a
-    href="https://shop.ichefpos.com/store/PXwNNNuL/reserve/storeInfo"
-    target="_blank"
-    rel="noopener"
-  >
-
-    <strong>
-      📅
-    </strong>
-
-    訂位
-
-  </a>
-
-
-  <a
-    href="https://www.google.com/maps/search/?api=1&query=逐光景觀餐廳+彰化縣花壇鄉寶山路866號"
-    target="_blank"
-    rel="noopener"
-  >
-
-    <strong>
-      📍
-    </strong>
-
-    導航
-
-  </a>
-
-
-  <a href="tel:047860776">
-
-    <strong>
-      ☎
-    </strong>
-
-    電話
-
-  </a>
-
-
-</div>
-
-
-<!-- =========================
-     JavaScript
-========================= -->
-
-<script>
-
-/* =========================
-   Header scroll
-========================= */
-
-const header =
-  document.getElementById("header");
-
-window.addEventListener("scroll", () => {
-
-  if(window.scrollY > 30){
-
-    header.classList.add("scrolled");
-
-  }else{
-
-    header.classList.remove("scrolled");
-
-  }
-
-});
-
-
-/* =========================
-   Scroll reveal
-========================= */
-
-const observer =
-  new IntersectionObserver(
-    (entries) => {
-
-      entries.forEach(entry => {
-
-        if(entry.isIntersecting){
-
-          entry.target.classList.add("show");
-
-          observer.unobserve(entry.target);
-
-        }
-
-      });
-
-    },
-    {
-      threshold:.12
-    }
-  );
-
-
-document
-  .querySelectorAll(".reveal")
-  .forEach(el => {
-
-    observer.observe(el);
-
-  });
-
-
-/* =========================
-   Footer year
-========================= */
-
-document.getElementById("year").textContent =
-  new Date().getFullYear();
-
-
-/* =========================
-   Smooth anchor handling
-========================= */
-
-document
-  .querySelectorAll('a[href^="#"]')
-  .forEach(link => {
-
-    link.addEventListener("click", function(e){
-
-      const target =
-        document.querySelector(
-          this.getAttribute("href")
-        );
-
-      if(target){
-
-        e.preventDefault();
-
-        target.scrollIntoView({
-          behavior:"smooth",
-          block:"start"
-        });
-
+  <!-- JavaScript -->
+  <script>
+    // Header Glassmorphic Effect
+    const header = document.getElementById("header");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 40) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
       }
-
     });
 
-  });
+    // Scroll Reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
 
-</script>
+    document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
 
+    // Auto Dynamic Footer Year
+    document.getElementById("year").textContent = new Date().getFullYear();
 
+    // Check Open/Closed Status
+    function checkOpenStatus() {
+      const now = new Date();
+      const currentDay = now.getDay();
+      const currentHour = now.getHours();
+      
+      const todayLi = document.querySelector(`.hours li[data-day="${currentDay}"]`);
+      if (todayLi) {
+        todayLi.style.color = "#fff";
+        todayLi.style.fontWeight = "700";
+      }
+
+      const statusTag = document.getElementById("open-status");
+      if (currentDay === 1) { // Monday
+        statusTag.textContent = "今日公休";
+        statusTag.classList.add("status-closed");
+      } else {
+        if (currentHour >= 18 || currentHour < 2) {
+          statusTag.textContent = "營業中";
+          statusTag.classList.add("status-open");
+        } else {
+          statusTag.textContent = "非營業時間";
+          statusTag.classList.add("status-closed");
+        }
+      }
+    }
+    checkOpenStatus();
+  </script>
 </body>
+
 </html>
