@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
- <meta name="viewport" content="width=1200, initial-scale=0.3">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>逐光景觀餐廳 CHASING LIGHT｜彰化花壇夜景．高空餐酒館．寵物友善</title>
   <meta name="description" content="位於彰化花壇 139 縣道旁，擁有 180 度高空日落夜景、1F 峇里島渡假風草皮與 2F 摩登餐酒館。提供咖啡甜點、深夜餐點、調酒與水煙，不定期歌手駐唱與手作活動，寵物友善。">
   <meta name="keywords" content="逐光景觀餐廳,彰化景觀餐廳,彰化夜景餐廳,花壇景觀餐廳,139縣道餐廳,彰化餐酒館,彰化約會餐廳,彰化寵物友善餐廳,彰化水煙">
@@ -23,7 +23,46 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+/* 📱 手機介面舒適度優化 */
+@media (max-width: 768px) {
+  /* 讓頂部大字在手機上大方清晰 */
+  .hero-title {
+    font-size: 42px !important;
+    letter-spacing: 4px !important;
+  }
+  .hero-sub {
+    font-size: 18px !important;
+    letter-spacing: 2px !important;
+  }
 
+  /* 調整內文與區塊標題字級，閱讀不費力 */
+  h2 {
+    font-size: 28px !important;
+  }
+  p, li {
+    font-size: 16px !important;
+    line-height: 1.7 !important;
+  }
+
+  /* 關於我們大圖：高度拉高到 360px，照片更清晰有質感 */
+  .about-img {
+    height: 360px !important;
+  }
+
+  /* 環境相簿：手機版改為單欄大圖或 2 欄大圖，高 240px */
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px !important;
+  }
+  .gallery-item {
+    height: 220px !important;
+  }
+
+  /* 隱藏電腦版頂部選單，開啟底部手機專用導航列 */
+  .nav-links { display: none !important; }
+  .mobile-bar { display: grid !important; }
+  body { padding-bottom: 80px !important; }
+}
   <style>
     /* =========================
        Luxury Dark Minimal Theme
